@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS bank_db;
+USE bank_db;
+
+CREATE TABLE IF NOT EXISTS accounts (
+    account_no INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    balance DOUBLE DEFAULT 0.0
+);
